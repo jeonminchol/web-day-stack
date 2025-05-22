@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #3f0e40;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel {
+  margin-top: 20px;
+}
+
+.channel h3 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.channel a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 4px 0;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+
+.header {
+  height: 60px;
+  background-color: #350d36;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.chat {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+
+.message .user {
+  font-weight: bold;
+  color: #1264a3;
+}
+
+.input-area {
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  background-color: white;
+}
+
+.input-area input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}

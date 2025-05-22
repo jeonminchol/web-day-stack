@@ -34,3 +34,109 @@ p {
 #test1 > ul > li {
   color: red;
 }
+<!--* 속성 선택자 *-->
+div[name="name1"] {
+    background-color: pink:
+}
+div[name~="name1"] {
+    /* *= 부분 일치 */
+    color: red;
+}
+div[class^="cl"] 
+
+/* 8. 형제 선택자 */
+$test2 ~ div [
+  /* 동일한 부모를 가진 요소 중에 #test2 이후에 등장하는 모든 div 선택  */
+  background: yellow;
+
+  /* 9. 반응 선택자 */
+  .area{
+    width: 100px;
+    height: 100px;
+
+    #active-test:active {
+      background-color: yellow; 
+     color: red;
+    }
+/*  */
+
+input[type="text"] :focus {background-color: pink;
+}
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  /* button 클릭 가능한 경우 */
+  button:enabled {
+    background-color: violet;
+  }
+  button:disabled {
+    background-color: yellow;
+  }
+
+  /* 10. 구조 선택자 */
+  #test3 li :first-child{
+    background-color: salmon;
+  }
+  #test3 li:last-child {
+    background-color: skyblue;
+  }
+  /* nth-child(숫자, old - 홀수, 두두 - 짝수 */
+  #test3 li:nth-child(4) {
+    background-color: darkcyan;
+  }
+   #test3 li:nth-last-of-type(4) {
+    color: white;
+   }
+   # test3 li:nth-last-child(3) {
+    background-color: hotpink;
+   }
+
+   #test3 li:nth-last-child{
+    background-color: seagreen;
+   }
+
+   /* 11. 가상 요소 선택자 */
+   #test4 p::before {
+       content: "앞";
+       color: blue;
+       background: yellow;
+
+   }
+   #test4 p:after {
+    content: "뒤";
+    color: white;
+    background: black;
+   }
+
+   /* 선택자 우선순위 */
+   /* !important > 인라인 스타일(style="") 
+        >아이디 선택자(#id)
+        > 클래스 선택자(.classs)
+        > 태그 선택자
+            */
+   
+   #test5{
+    width: 200px;
+    height: 200px;
+   }
+   div {
+    background: pink; !important:
+   }
+   div {
+    background: skyblue;
+   }
+
+   /* font-family */
+   #ff1 [
+       font-family: ari
+   ]
+   #ff2 [
+     font-family: "궁서", serif;
+   ]
+   #ff3[
+        font-family: "돋움", sans-serif;
+   ]
+]
+
