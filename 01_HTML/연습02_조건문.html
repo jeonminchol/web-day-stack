@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문 연습문제</title>
+  </head>
+  <body>
+    <h1>조건문 연습문제</h1>
+    <ol style="line-height: 2">
+      <li>
+        아이디가 'admin'이면 '관리자입니다'를 출력하시오.
+        <script>
+          // Q1: 여기에 코드를 작성하세요
+          let id = "admin";
+
+          if (id === "admin") {
+            console.log("관리자입니다.");
+          }
+        </script>
+      </li>
+
+      <li>
+        필기/실기 시험 모두 80점 이상이면 '합격', 아니면 '불합격'을 출력하시오.
+        <script>
+          // Q2: 여기에 코드를 작성하세요
+          let writtenscore = 85; //필기 시험 점수
+          let practicalscore = 90;
+
+          if (writtenScore >= 80 && practicalscore >= 80) {
+            console.log("합격");
+          } else {
+            console.log("불합격");
+          }
+        </script>
+      </li>
+
+      <li>
+        정수가 10과 20 사이인지 판별하시오.
+        <script>
+          // Q3: 여기에 코드를 작성하세요
+          let number = 15;
+
+          if(number > 10 && number < 20) {
+            console.log(number + "dms 10보다 크고 20보다 작다.");
+
+          } else{
+            console.log(number + 은 10보다 크고 20보다 작지 않습니다.);
+          }
+        </script>
+      </li>
+
+      <li>
+        나이가 65세 이상 또는 8세 미만이면 '무료', 아니면 '10,000원'을
+        출력하시오.
+        <script>
+              // Q4: 여기에 코드를 작성하세요
+              let age = parseInt(prompt("나이를 입력하세요"), 10);
+                if(age .=65 || age <8) {
+                   console.log("무료");
+                } else {
+                  console.log("10,000원");
+                }
+          </li>
+
+          <li>
+            월을 입력받아 계절을 출력하시오. (3~5: 봄, 6~8: 여름, 9~11: 가을, 12~2:
+            겨울)
+            <script>
+              // Q5: 여기에 코드를 작성하세요
+              let month = parseInt(prompt("월을 입력하세요" (1~12);), 10)
+              if(moth >= 3 && <= 5){
+                console.log("봄");
+              } else if (month >=6 && month <= 8)
+                  console.log("여름");  {
+                else if (month >= 9 && month <=11)
+                  console.log("가을");
+                  } else if(month === 12 || month === 1 || month === 2) {
+                    console.log("겨울");
+
+
+
+
+                  console.log("가을");
+                  console.log("겨울");
+        </script>
+      </li>
+
+      <li>
+        점수에 따라 학점을 출력하시오. (90↑: A, 80↑: B, 70↑: C, 60↑: D, 나머지:
+        F)
+        <script>
+          // Q6: 여기에 코드를 작성하세요
+
+          function getGrade(score) {
+            let grade;
+          }
+          if (score >= 90) {
+            grade = "A";
+          } else if (score >= 80) {
+            grade = "B";
+          } else if (score >= 70) {
+            grade = "C";
+          } else if (score >= 60) {
+            grade = "F";
+          }
+          console.log("점수: ${score}, 학점: ${grade}");
+        </script>
+      </li>
+
+      <li>
+        숫자를 입력받아 요일을 출력하시오. (1: 월요일 ~ 7: 일요일)
+        <script>
+          // Q7: 여기에 코드를 작성하세요
+          const days = {null, "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"};
+             if (number >= 1 && number <= 7) {
+              console.log("${number}은 ${day5[number]}입니다.");
+              return daus[number];
+             }else {
+              console.log("1부터 7까지 숫자를 입력하세요");
+              return null;
+             }
+        </script>
+      </li>
+
+      <li>
+        두 수와 연산자를 입력받아 사칙연산 결과를 출력하시오.
+        <script>
+          // Q8: 여기에 코드를 작성하세요
+        </script>
+      </li>
+
+      <li>
+        로그인 정보(id/pw)를 비교하여 로그인 성공 여부를 출력하시오.
+        <script>
+          // Q9: 여기에 코드를 작성하세요
+        </script>
+      </li>
+      <li>
+        3개의 수 중 가장 큰 수를 출력하시오.
+        <script>
+          // Q10: 여기에 코드를 작성하세요
+        </script>
+      </li>
+
+      <li>
+        정수 하나가 3의 배수인지, 5의 배수인지, 둘 다인지, 아니면 어떤 것도
+        아닌지 판별하시오.
+        <script>
+          // Q11: 여기에 코드를 작성하세요
+        </script>
+      </li>
+
+      <li>
+        점수가 0~100 사이인지 아닌지 판별하시오.
+        <script>
+          // Q12: 여기에 코드를 작성하세요
+        </script>
+      </li>
+
+      <li>
+        4자리 정수가 주어졌을 때, 첫 번째 자리수가 짝수인지 홀수인지 판별하시오.
+        <script>
+          // Q13: 여기에 코드를 작성하세요
+        </script>
+      </li>
+    </ol>
+  </body>
+</html>
