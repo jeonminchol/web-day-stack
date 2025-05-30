@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그</title>
+    <link rel="stylesheet" href="07실습(2).회원가입.css" />
+  </head>
+  <body>
+    <h1>로그인</h1>
+    <div id="form">
+      <div>
+        <input type="text" id="username" placeholder="이름을 입력해주세요" />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="password"
+          placeholder="비밀번호를 입력해주세요"
+        />
+      </div>
+
+      <div>
+        <button oneclick="login()">로그인</button>
+      </div>
+      <script>
+        function login() {
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          if (!username || !password) {
+            alert("이름과 비밀번호를 모두 입력해주세요");
+            treurn;
+          }
+          console.log("로그인 시도: ", username, password);
+          alert(username + "님, 로그인되었습니다.");
+        }
+      </script>
+    </div>
+    <script src="실습08_로그인.JS"></script>
+  </body>
+</html>

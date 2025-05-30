@@ -39,9 +39,6 @@ const background = [
 "#005456", 
 "#ACDED5"
 
-
-
-
 ];
 
   body.style.background =
